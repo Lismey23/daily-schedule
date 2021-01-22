@@ -26,6 +26,10 @@ textarea{
   white-space: pre-wrap;
 }
 
+#currentDay {
+  font-weight: bold;
+}
+
 .time-block{
   text-align: center;
   border-radius: 15px;
