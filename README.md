@@ -8,5 +8,5 @@ Given started code, by modifying  it, the user is able to display the current da
 Deployed Application 
 <img src=".\assets\Deployed Application.JPG">
 
-Link to deployed application: 
-
+Link to deployed application: https://lismey23.github.io/daily-schedule/
+GitHub: https://github.com/Lismey23/daily-schedule
