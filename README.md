@@ -1,22 +1,12 @@
 # daily-schedule
 
-Ok so here is what I got, I moved the data-number attr into the div tag with the class of time, you can see below
-<!-- 9AM Timeblock  -->
-    <div class="row">
-      <div class="col-sm-2" class="">
-        <div id="time1" class="col-2 border text-center time" data-number="9">9AM</div>
-      </div>
-        <div class="col-sm-8">
-          <textarea class="textarea" ></textarea>
-        </div>
-        <div class="col-sm-2">
-        <button class="btn" type="button">Save </button>
-      </div>
-    </div>
-10:18
-then using jquery you can do this
-$('.time').each(function(){
-      var blockHour = parseInt($(this).attr('data-number'));
-    })
-10:19
-loop through all of the tags that have the .time attr and then save the data-number as a variable and convert it into an interger
+A simple daily planner was created to allow a user to save events for each hour of the day. 
+Given started code, by modifying  it, the user is able to display the current day at the top of the calendar, and he is presented with time blocks for standard business hours, each time block will be color coded to indicate if is in the past, present or future. When the user enters an event in a time block and clicks  the save button, the event will be saved in local storage and in case the page is refreshed the saved event will persist.
+
+ Days.js library was used to work with date and time.
+ 
+Deployed Application 
+<img src=".\assets\Deployed Application.JPG">
+
+Link to deployed application: 
+
