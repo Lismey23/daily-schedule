@@ -1,5 +1,16 @@
 console.log(dayjs())
 var saveBtn = $("button").addClass("saveBtn")
+var text1 = $("#textArea1")
+var text2 = $("#textArea2")
+var text3 = $("#textArea3")
+var text4 = $("#textArea4")
+var text5 = $("#textArea5")
+var text6 = $("#textArea6")
+var text7 = $("#textArea7")
+var text8 = $("#textArea8")
+var text9 = $("#textArea9")
+
+
 
 $( document ).ready(function(){
 
@@ -14,21 +25,32 @@ $( document ).ready(function(){
     
      // create an event listener to the saveButton to save in local storage the saved task
 
-    saveBtn.on("click", function(){
-        var textInput = $("textarea").text();
-        console.log(textInput);
+    saveBtn.on("click", function(event){
+        event.preventDefault();
+     
+
+        var user = {
+            input1: text1.text(),
+            input2: text2.text(),
+            input3: text3.text(),
+            input4: text4.text(),
+            input5: text5.text(),
+            input6: text6.text(),
+            input7: text7.text(),
+            input8: text8.text(),
+            input9: text9.text(),
+
+        }
+
+        localStorage.setItem("user", JSON.stringify(user));
+
+        var lastTask = JSON.parse(localStorage.getItem("user"));
+        
+        console.log(lastTask)
         
 
 
-
-
-
-
-
-       
-
-
-
+    
 
     })
 
@@ -199,10 +221,7 @@ $( document ).ready(function(){
     
 
 
-    // create an event listener to the saveButton to save in local storage the saved task
-
-    //Check when i refresh the page the tasks remains displayed
-
+    
 
     
 
