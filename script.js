@@ -30,15 +30,15 @@ $( document ).ready(function(){
      
 
         var user = {
-            input1: text1.text(),
-            input2: text2.text(),
-            input3: text3.text(),
-            input4: text4.text(),
-            input5: text5.text(),
-            input6: text6.text(),
-            input7: text7.text(),
-            input8: text8.text(),
-            input9: text9.text(),
+            input1: text1.val(),
+            input2: text2.val(),
+            input3: text3.val(),
+            input4: text4.val(),
+            input5: text5.val(),
+            input6: text6.val(),
+            input7: text7.val(),
+            input8: text8.val(),
+            input9: text9.val(),
 
         }
 
